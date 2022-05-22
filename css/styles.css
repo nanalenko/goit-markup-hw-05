@@ -176,7 +176,16 @@ img{
     margin-right: 30px;
 }
 
-.auth-nav .header-contacts{
+/* .auth-nav .header-contacts{
+    padding: 32px 0;
+    align-items: center;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+} */
+.header-contacts{
     padding: 32px 0;
     align-items: center;
 
@@ -662,6 +671,9 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.88;
 }
+
+
+
 .project-link{
     display: block;
 }
@@ -669,6 +681,49 @@ color: var(--accent-color);
 .project-link:hover,
 .project-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-link:hover .card-overlay,
+.project-link:focus .card-overlay{
+    transform: translateY(0);
+}
+/* Card-thumb*/
+
+.card-thumb{
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--accent-white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+
+}
+
+.text-card{
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.55;
+    
 }
 
 .project-card{
