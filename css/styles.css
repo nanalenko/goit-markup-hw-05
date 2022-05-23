@@ -261,8 +261,8 @@ color: var(--accent-color);
 
 }
 
-.hero-button :hover,
-.hero-button :focus { 
+.hero-button:hover,
+.hero-button:focus { 
     background-color: var(--color-button-hover);
 }
 
