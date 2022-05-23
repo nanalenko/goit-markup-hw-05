@@ -529,7 +529,7 @@ color: var(--accent-color);
 
 .client-link{
     display: flex;
-    fill: var(--fill-icon);
+    color: var(--fill-icon);
     
     border: 1px solid var(--border-icon);
     border-radius: 4px;
@@ -545,13 +545,14 @@ color: var(--accent-color);
 }
 .client-link:hover,
 .client-link:focus{
-    fill:var(--fill-bgr-hover);
+    color:var(--fill-bgr-hover);
     border: 1px solid var(--fill-bgr-hover);
 }
 
 .client-icon{
     align-items: center;
     justify-content: center;
+    fill: currentColor;
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
